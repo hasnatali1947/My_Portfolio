@@ -1,6 +1,6 @@
 import React from "react";
 // import { useClient } from 'next/client';
-import NameScroll from "./NameScroll";
+// import NameScroll from "./NameScroll";
 
 const Page = () => {
   // useClient();
@@ -40,7 +40,7 @@ const Page = () => {
         <button>Left</button>
         <button>Right</button>
         <div>
-        <NameScroll />
+        {/* <NameScroll /> */}
         </div>
 
       </section>
