@@ -24,6 +24,12 @@ nav{
     height: 7vh;
 }
 
+.headerLeft li{
+    display: flex;
+    height: 18px;
+    gap: 10px;
+}
+
 .headerRight{
     display: flex;
     align-items: center;
@@ -75,7 +81,7 @@ nav{
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* border: 2px solid; */
+
 }
 
 .projects h2{

@@ -1,19 +1,21 @@
 import React from "react";
-// import { useClient } from 'next/client';
-// import NameScroll from "./NameScroll";
+import "./globals.css"
+import github from "../assets/images/github.svg"
+import Gmail from "../assets/images/Gmail.svg"
+import linkedin from "../assets/images/linkedin.svg"
 
 const Page = () => {
-  // useClient();
   return(
     <>
+
     <header>
       <nav>
         <ul className="headerLeft">
-          <li>gmail
-          {/* <Image src="/icons/Gmail.svg" alt="Gmail Logo" width={50} height={50} /> */}
+          <li>
+            <img src={github.src} alt="GitHub Logo" />
+            <img src={Gmail.src} alt="Gmail Logo" />
+            <img src={linkedin.src} alt="linkedin Logo" />
           </li>
-          <li>linkedIn</li>
-          <li>github</li>
           </ul>
           <ul className="headerRight">
             <li>landing</li>
@@ -33,18 +35,16 @@ const Page = () => {
         <button>CONNECT WITH ME</button>
       </section>
 
-      <section className="projects">
+      {/* <section className="projects">
         <h2>My Projects</h2>
         <p>witness the beauty of through our lens, <br /> as we showcase stunning landscaps that evoke <br /> wonder and appreciation for the environment.</p>
       
         <button>Left</button>
         <button>Right</button>
         <div>
-        {/* <NameScroll /> */}
         </div>
 
-      </section>
-
+      </section> */}
     </main>
     </>
   )
