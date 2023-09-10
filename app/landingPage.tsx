@@ -1,8 +1,8 @@
-"use client";
 import React from "react";
-import github from "../assets/images/github.svg";
-import Gmail from "../assets/images/Gmail.svg";
-import linkedin from "../assets/images/linkedin.svg";
+import github from "./assets/images/github.svg";
+import Gmail from "./assets/images/Gmail.svg";
+import linkedin from "./assets/images/linkedin.svg";
+
 
 const landingPage = () => {
     return(

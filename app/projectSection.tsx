@@ -1,9 +1,8 @@
-"use client";
 import React from "react"
-import img1 from "../assets/projectsImg/img1.png";
-import img2 from "../assets/projectsImg/img2.png";
-import img3 from "../assets/projectsImg/img3.png";
-import img4 from "../assets/projectsImg/img4.png";
+import img1 from "./assets/projectsImg/img1.png";
+import img2 from "./assets/projectsImg/img2.png";
+import img3 from "./assets/projectsImg/img3.png";
+import img4 from "./assets/projectsImg/img4.png";
 
 const ProjectsSection = () => {
 
