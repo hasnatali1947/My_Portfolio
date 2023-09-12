@@ -20,8 +20,12 @@ import mypic from "../assets/myPic/hasnatimg.JPG"
 import mypic2 from "../assets/myPic/Hasnat.JPG"
 import shayan from "../assets/images/shayan.png"
 import mercy from "../assets/images/mercy.jpeg"
+import contactWhite from "../assets/images/contactWhite.png"
+import contactimg from "../assets/images/contactimg.jpg"
+import Gmail from "../assets/images/Gmail.svg";
+import Hasnat from "../assets/images/Hasnat.jpeg";
 
 export {
     css, figma, freeCodeCamp, github, hackerRank, html, jest, js, linkedin, microverse, firebase, next, postgreSQL, rails, react,
-    redux, ruby, mypic, mypic2, cursor, shayan, mercy
+    redux, ruby, mypic, mypic2, cursor, shayan, mercy, contactWhite, contactimg, Gmail, Hasnat
 }
