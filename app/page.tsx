@@ -4,6 +4,7 @@ import "./globals.css";
 import ProjectsSection from "./projectSection";
 import LandingPage from "./landingPage"; 
 import AboutSection from "./aboutSection";
+import Recommendations from "./recommendationSection"
 
 const Page = () => {
   return (
@@ -12,6 +13,7 @@ const Page = () => {
         <LandingPage /> 
         <ProjectsSection />
         <AboutSection />
+        <Recommendations />
       </main>
     </>
   );

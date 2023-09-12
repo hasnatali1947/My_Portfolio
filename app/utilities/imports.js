@@ -15,10 +15,13 @@ import rails from "../assets/images/rails.png"
 import react from "../assets/images/react.png"
 import redux from "../assets/images/redux.png"
 import ruby from "../assets/images/ruby.png"
+import cursor from "../assets/images/cursor.png"
 import mypic from "../assets/myPic/hasnatimg.JPG"
 import mypic2 from "../assets/myPic/Hasnat.JPG"
+import shayan from "../assets/images/shayan.png"
+import mercy from "../assets/images/mercy.jpeg"
 
 export {
     css, figma, freeCodeCamp, github, hackerRank, html, jest, js, linkedin, microverse, firebase, next, postgreSQL, rails, react,
-    redux, ruby, mypic, mypic2
+    redux, ruby, mypic, mypic2, cursor, shayan, mercy
 }
