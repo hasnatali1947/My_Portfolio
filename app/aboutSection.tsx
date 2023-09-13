@@ -2,7 +2,7 @@
 import React from "react";
 import {
     css, figma, freeCodeCamp, github, hackerRank, html, jest, js, firebase, next, postgreSQL, rails, react,
-    redux, ruby, mypic
+    redux, ruby, mypic, microverse
 } from "./utilities/imports"
 
 const AboutSection = () => {
@@ -24,6 +24,8 @@ const AboutSection = () => {
 
             <div className="about-blue-background-1"></div>
             <div className="about-blue-background-2"></div>
+            <img className="skillsOnLanding microverseSkill2" src={microverse.src} alt="" />
+            <img className="skillsOnLanding freeCodeCampSkill2" src={freeCodeCamp.src} alt="" />
 
             <h2>MY SKILL SET</h2>
             <div className="skillMainDiv">

@@ -2,7 +2,7 @@ import React from "react"
 import { cursor, shayan, mercy } from "./utilities/imports"
 const recommendation = () => {
     return (
-        <section className="recommendation_section">
+        <section className="recommendation_section" >
             <span className="recommendation_heading">DONT TAKE MY WORDS <span className="only">ONLY</span> <img className="cursorImg" src={cursor.src} alt="" /> </span>
 
             <div className="recommendationMainDiv">

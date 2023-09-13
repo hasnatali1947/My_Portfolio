@@ -1,5 +1,6 @@
 import React from "react";
-import {github, Gmail, linkedin, Hasnat } from "./utilities/imports"
+import {github, Gmail, linkedin, Hasnat, microverse, freeCodeCamp } from "./utilities/imports"
+import "./globals.css"
 
 const landingPage = () => {
 
@@ -22,9 +23,9 @@ const landingPage = () => {
             </li>
           </ul>
           <ul className="headerRight">
-            <li onClick={() => scrollToSection("projects")}>PROJECTS</li>
-            <li onClick={()=> scrollToSection("aboutSection")}>ABOUT</li>
-            <li onClick={() => scrollToSection("contactSection")}>CONTACT</li>
+            <li onClick={() => scrollToSection("projects")} className="headerProject">PROJECTS</li>
+            <li onClick={()=> scrollToSection("aboutSection")} className="headerAbout">ABOUT</li>
+            <li onClick={() => scrollToSection("contactSection")} className="headerContact">CONTACT</li>
           </ul>
         </nav>
       </header>
@@ -38,7 +39,10 @@ const landingPage = () => {
             a Product Designer and Visual Developer in SF. <br /> Specialize in
             UI/UX Design, Responsive Web Design, <br /> and Visual Development
           </p>
-          <button>CONNECT WITH ME</button>
+          <button onClick={ ()=> scrollToSection("contactSection")} className="connectMe">CONNECT WITH ME</button>
+          <button onClick={() => scrollToSection("landing_page")} className="TopButton">TOP</button>
+          <img className="skillsOnLanding microverseSkill" src={microverse.src} alt="" />
+          <img className="skillsOnLanding freeCodeCampSkill" src={freeCodeCamp.src} alt="" />
         </section>
         </>
     )
