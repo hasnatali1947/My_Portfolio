@@ -18,10 +18,9 @@ const [message, setMessage] = useState("");
 
         if (state.succeeded) {
             setShowSuccessMessage(true);
-            // Set a timeout to hide the success message and show the form again after 5 seconds
             setTimeout(() => {
                 setShowSuccessMessage(false);
-            }, 5000); // 5000 milliseconds (5 seconds)
+            }, 5000);
         }
 
     }, [state.succeeded]);
@@ -75,8 +74,7 @@ const [message, setMessage] = useState("");
                                 errors={state.errors}
                             />
 
-
-                            <textarea placeholder="MESSAGE" required name="message" maxlength="500" cols="30" rows="10" onChange={(e) => setMessage(e.target.value)} value={message}></textarea>
+                            <textarea placeholder="MESSAGE" required name="message" maxLength="500" cols="30" rows="10" onChange={(e) => setMessage(e.target.value)} value={message}></textarea>
                             <button className="box" type="submit" disabled={state.submitting}>
                                 <span>SUBMIT</span>
                                 <i></i>

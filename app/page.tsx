@@ -8,6 +8,7 @@ import Recommendations from "./recommendationSection"
 import Contact from "./contactSection";
 
 const Page = () => {
+
   return (
     <>
       <main>

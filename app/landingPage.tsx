@@ -1,20 +1,39 @@
-import React from "react";
-import {github, Gmail, linkedin, Hasnat, microverse, freeCodeCamp } from "./utilities/imports"
+import React, { useEffect } from "react";
+import {github, Gmail, linkedin, Hasnat, microverse, freeCodeCamp, MobMenu } from "./utilities/imports"
 import "./globals.css"
 
 const landingPage = () => {
 
-    const scrollToSection  = (sectionId) => {
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+          const observer = new window.IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("landing_page");
+              } else {
+                entry.target.classList.remove("landing_page");
+              }
+            });
+          });
+    
+          // Select elements with class "landing_page"
+          const scrollElements = document.querySelectorAll(".landing_page");
+          scrollElements.forEach((el) => observer.observe(el));
+        }
+      }, []);
+    
+      const scrollToSection = (sectionId) => {
         const section = document.querySelector(`.${sectionId}`);
-       if(section){
-        section.scrollIntoView({ behavior: "smooth" })
-       }
-    };
-  
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      };
+    
     return(
         <>
         <header>
         <nav>
+
           <ul className="headerLeft">
             <li>
                 <a className="a_tag" href="https://github.com/hasnatali1947"><img src={github.src} alt="GitHub Logo" /></a>
@@ -23,13 +42,14 @@ const landingPage = () => {
             </li>
           </ul>
           <ul className="headerRight">
-            <li onClick={() => scrollToSection("projects")} className="headerProject">PROJECTS</li>
-            <li onClick={()=> scrollToSection("aboutSection")} className="headerAbout">ABOUT</li>
-            <li onClick={() => scrollToSection("contactSection")} className="headerContact">CONTACT</li>
+            <li className="mobMenu"><img src={MobMenu.src} alt="MobMenu" /></li>
+            <li onClick={() => scrollToSection("projects")} className="headerProject headerRightDisktop">PROJECTS</li>
+            <li onClick={()=> scrollToSection("aboutSection")} className="headerAbout headerRightDisktop">ABOUT</li>
+            <li onClick={() => scrollToSection("contactSection")} className="headerContact headerRightDisktop">CONTACT</li>
           </ul>
         </nav>
       </header>
-        <section className="landing_page">
+        <section className="landing_page top">
             <img className="hasnatImage" src={Hasnat.src} alt="" />
           <h3>Hi, I'm Hasnat Ali</h3>
           <h1>
@@ -40,8 +60,9 @@ const landingPage = () => {
             UI/UX Design, Responsive Web Design, <br /> and Visual Development
           </p>
           <button onClick={ ()=> scrollToSection("contactSection")} className="connectMe">CONNECT WITH ME</button>
-          <button onClick={() => scrollToSection("landing_page")} className="TopButton">TOP</button>
-          <img className="skillsOnLanding microverseSkill" src={microverse.src} alt="" />
+          <button onClick={() => scrollToSection("top")} className="TopButton">TOP</button>
+          <a href="https://www.microverse.org/"><img className="skillsOnLanding microverseSkill" src={microverse.src} alt="" /></a>
+          
           <img className="skillsOnLanding freeCodeCampSkill" src={freeCodeCamp.src} alt="" />
         </section>
         </>
