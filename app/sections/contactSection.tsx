@@ -1,20 +1,19 @@
 import React, { useEffect, useState } from "react";
-import { contactimg, contactWhite } from './utilities/imports'
+import { contactimg, contactWhite } from '../utilities/imports'
 import { useForm, ValidationError } from '@formspree/react';
 
 const contact = () => {
     const [state, handleSubmit] = useForm("xknlznek");
     const [showSuccessMessage, setShowSuccessMessage] = useState(false);
     const [name, setName] = useState("");
-const [email, setEmail] = useState("");
-const [message, setMessage] = useState("");
-
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
 
     useEffect(() => {
 
-       setName("")
-       setEmail("")
-       setMessage("")
+        setName("")
+        setEmail("")
+        setMessage("")
 
         if (state.succeeded) {
             setShowSuccessMessage(true);
@@ -27,7 +26,7 @@ const [message, setMessage] = useState("");
 
     return (
         <>
-            <section className="contactSection">
+            <section className="contactSection" id="contactSection">
                 <div>
                     <h2>CONTACT</h2>
                     {showSuccessMessage ? (
@@ -38,8 +37,8 @@ const [message, setMessage] = useState("");
                         <h4>I WOULD BE GLAD TO HEAR FROM YOU</h4>
                     )}
                 </div>
-                <div className="contact-blue-background-1"></div>
-                <div className="contact-blue-background-2"></div>
+                {/* <div className="contact-blue-background-1"></div> */}
+                {/* <div className="contact-blue-background-2"></div> */}
                 <div className="formDiv">
                     <form action="https://formspree.io/f/xknlznek" method="post" onSubmit={handleSubmit}>
 
@@ -54,7 +53,6 @@ const [message, setMessage] = useState("");
                                 type="text"
                                 name="name"
                                 required
-                                maxLength="30"
                                 placeholder="NAME"
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
@@ -74,10 +72,11 @@ const [message, setMessage] = useState("");
                                 errors={state.errors}
                             />
 
-                            <textarea placeholder="MESSAGE" required name="message" maxLength="500" cols="30" rows="10" onChange={(e) => setMessage(e.target.value)} value={message}></textarea>
+                            <textarea placeholder="MESSAGE" required name="message" onChange={(e) => setMessage(e.target.value)} value={message}></textarea>
                             <button className="box" type="submit" disabled={state.submitting}>
-                                <span>SUBMIT</span>
-                                <i></i>
+                                SUBMIT
+                                {/* <span>SUBMIT</span> 
+                                <i></i> */}
                             </button>
                         </div>
                     </form>
@@ -85,7 +84,7 @@ const [message, setMessage] = useState("");
             </section>
             <footer>
                 <footer>
-                    <h4>HASNAT</h4>
+                    <h4 className="footerH4">HAS<span className="N">N</span>AT</h4>
                     <ul>
                         <a className="a_tag" href="https://docs.google.com/document/d/1IVhWvaHmA0EmR59zDbl8iizvOmerYMpAO1qFseMy0-o/edit?usp=sharing"><li>RESUME</li></a>
                         <a className="a_tag" href="https://www.linkedin.com/in/hasnattali/"><li>LINKEDIN</li></a>

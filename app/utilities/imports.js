@@ -25,8 +25,15 @@ import contactimg from "../assets/images/contactimg.jpg"
 import Gmail from "../assets/images/Gmail.svg";
 import Hasnat from "../assets/images/Hasnat.jpeg";
 import MobMenu from "../assets/images/mobMenu.png"
+import blueLine from "../assets/images/blueLine.svg"
+import TVShow from "../assets/projectsImg/img1.png"
+import WorriorCar from "../assets/projectsImg/img2.png"
+import leaderboard from "../assets/projectsImg/leaderboard.png"
+import WeatherApp from "../assets/projectsImg/weatherApp.png"
+import budgetApp from "../assets/projectsImg/budgetApp.png"
 
 export {
     css, figma, freeCodeCamp, github, hackerRank, html, jest, js, linkedin, microverse, firebase, next, postgreSQL, rails, react,
-    redux, ruby, mypic, mypic2, cursor, shayan, mercy, contactWhite, contactimg, Gmail, Hasnat, MobMenu
+    redux, ruby, mypic, mypic2, cursor, shayan, mercy, contactWhite, contactimg, Gmail, Hasnat, MobMenu, TVShow, WeatherApp, WorriorCar, leaderboard, budgetApp,
+    blueLine
 }

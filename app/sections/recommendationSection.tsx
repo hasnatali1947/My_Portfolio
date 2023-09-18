@@ -1,11 +1,24 @@
-import React from "react"
-import { cursor, shayan, mercy } from "./utilities/imports"
+import React, { useEffect, useState } from "react"
+import { cursor, shayan, mercy } from "../utilities/imports"
+import { useScroll } from "framer-motion";
+
 const recommendation = () => {
+
+    const [scrollYPosition, setScrollYPosition] = useState();
+    const { scrollYProgress } = useScroll();
+
+    useEffect(() => {
+        scrollYProgress.onChange((v) => {
+          setScrollYPosition(v * 1600);
+        });
+      }, [scrollYProgress]);
+
     return (
         <section className="recommendation_section" >
             <span className="recommendation_heading">DONT TAKE MY WORDS <span className="only">ONLY</span> <img className="cursorImg" src={cursor.src} alt="" /> </span>
 
-            <div className="recommendationMainDiv">
+            <div className="recommendationMainDiv" style={{
+            transform: `translateX(calc(-${scrollYPosition}px + 1250px ))`,}}>
                 <div className="recommendationDiv">
                     <div className="shayanRecommendation">
                         <p>Hasnat is an exceptional software developer known for his excellent collaborative skills. One of his standout qualities is his exceptional problem-solving approach, which sets him apart in the field.</p>
