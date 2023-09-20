@@ -16,14 +16,13 @@ import react from "../assets/images/react.png"
 import redux from "../assets/images/redux.png"
 import ruby from "../assets/images/ruby.png"
 import cursor from "../assets/images/cursor.png"
-import mypic from "../assets/myPic/hasnatimg.JPG"
-import mypic2 from "../assets/myPic/Hasnat.JPG"
+import mypic2 from "../assets/images/HasnatProfile.jpeg"
+import Hasnat from "../assets/images/HasnatProfile.jpeg";
 import shayan from "../assets/images/shayan.png"
 import mercy from "../assets/images/mercy.jpeg"
 import contactWhite from "../assets/images/contactWhite.png"
 import contactimg from "../assets/images/contactimg.jpg"
 import Gmail from "../assets/images/Gmail.svg";
-import Hasnat from "../assets/images/Hasnat.jpeg";
 import MobMenu from "../assets/images/mobMenu.png"
 import blueLine from "../assets/images/blueLine.svg"
 import fire from "../assets/images/fire.png"
@@ -40,6 +39,6 @@ import budgetApp from "../assets/projectsImg/budgetApp.png"
 
 export {
     css, figma, freeCodeCamp, github, hackerRank, html, jest, js, linkedin, microverse, firebase, next, postgreSQL, rails, react,
-    redux, ruby, mypic, mypic2, cursor, shayan, mercy, contactWhite, contactimg, Gmail, Hasnat, MobMenu, TVShow, WeatherApp, WorriorCar, leaderboard, budgetApp,
+    redux, ruby, mypic2, cursor, shayan, mercy, contactWhite, contactimg, Gmail, Hasnat, MobMenu, TVShow, WeatherApp, WorriorCar, leaderboard, budgetApp,
     blueLine, fire, express, circuit, mongoDB, arrowLeft, arrowRight
 }

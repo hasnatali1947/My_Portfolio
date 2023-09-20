@@ -77,7 +77,7 @@ const LandingPage = () => {
         </div>
 
         <img className="hasnatImage" src={Hasnat.src} alt="" />
-        <h3>Hi, I'm Hasnat <span role="img" aria-label="wave">🖐</span></h3>
+        <h3>Hi, I&apos;m Hasnat<span role="img" aria-label="wave">🖐</span></h3>
         <img className="blueLine" src={blueLine.src} alt="blueLine" />
         <h1>
           Building digital <br /> products, brands, and <br /> experience.
