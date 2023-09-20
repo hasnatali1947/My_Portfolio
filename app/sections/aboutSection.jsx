@@ -4,7 +4,7 @@ import { useScroll } from "framer-motion";
 
 import {
     css, figma, freeCodeCamp, github, hackerRank, html, jest, js, firebase, next, postgreSQL, rails, react,
-    redux, ruby, mypic2, microverse
+    redux, ruby, mypic2, microverse, fire, express, circuit,  mongoDB
 } from "../utilities/imports"
 
 const AboutSection = () => {
@@ -77,6 +77,14 @@ const AboutSection = () => {
                             <span className="span Figma">JS</span>
                             <img src={js.src} alt="css" />
                         </div>
+                        <div className="cssDiv">
+                            <span className="span Figma">Fast Learner</span>
+                            <img src={fire.src} alt="css" />
+                        </div>
+                        <div className="cssDiv">
+                            <span className="span Figma">Node.js/Express</span>
+                            <img src={express.src} alt="css" />
+                        </div>     
                     </div>
                     <div className="bottomSkill">
 
@@ -105,6 +113,14 @@ const AboutSection = () => {
                             <img src={redux.src} alt="css" />
                         </div>
                         <div className="cssDiv">
+                            <span className="span Figma">Effective Communicator</span>
+                            <img src={circuit.src} alt="css" />
+                        </div>
+                        <div className="cssDiv">
+                            <span className="span Figma">MongoDB</span>
+                            <img src={mongoDB.src} alt="css" />
+                        </div>
+                        <div className="cssDiv">
                             <span className="span Figma">Ruby</span>
                             <img src={ruby.src} alt="css" />
                         </div>
@@ -112,10 +128,11 @@ const AboutSection = () => {
                 </div>
             </div>
 
+{/* /////////////////////////////// Mobile Skills/////////////////////////////////////////////// */} 
 
-            <div className="SkillContainer">
+            <div className="SkillContainerMoblie">
 
-                <div className="skillMainDivMoblie" style={{ transform: `translateX(calc(-${SkillScroll}px + 700px))` }}>
+                <div className="skillMainDivMoblie" style={{ transform: `translateX(calc(-${SkillScroll}px + 800px))` }}>
                     <div className="topSkill">
                         <div className="cssDiv">
                             <span className="span CSS">CSS</span>
@@ -149,6 +166,16 @@ const AboutSection = () => {
                             <span className="span Figma">JS</span>
                             <img src={js.src} alt="css" />
                         </div>
+                        <div className="cssDiv">
+                            <span className="span Figma">Fast Learner</span>
+                            <img src={fire.src} alt="css" />
+                        </div>
+                        <div className="cssDiv">
+                            <span className="span Figma">Node.js / Express</span>
+                            <img src={express.src} alt="css" />
+                        </div>
+                      
+
                     </div>
                     <div className="bottomSkill">
 
@@ -175,6 +202,14 @@ const AboutSection = () => {
                         <div className="cssDiv">
                             <span className="span Figma">Redux</span>
                             <img src={redux.src} alt="css" />
+                        </div>
+                        <div className="cssDiv">
+                            <span className="span Figma">Effective Communicator</span>
+                            <img src={circuit.src} alt="css" />
+                        </div>
+                        <div className="cssDiv">
+                            <span className="span Figma">MongoDB</span>
+                            <img src={mongoDB.src} alt="css" />
                         </div>
                         <div className="cssDiv">
                             <span className="span Figma">Ruby</span>

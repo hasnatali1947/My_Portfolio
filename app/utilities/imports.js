@@ -26,6 +26,12 @@ import Gmail from "../assets/images/Gmail.svg";
 import Hasnat from "../assets/images/Hasnat.jpeg";
 import MobMenu from "../assets/images/mobMenu.png"
 import blueLine from "../assets/images/blueLine.svg"
+import fire from "../assets/images/fire.png"
+import express from "../assets/images/express.png"
+import circuit from "../assets/images/circuit.png"
+import mongoDB from "../assets/images/mongoDB.png"
+import arrowLeft from "../assets/images/arrow-left.svg"
+import arrowRight from "../assets/images/arrow-right.svg"
 import TVShow from "../assets/projectsImg/img1.png"
 import WorriorCar from "../assets/projectsImg/img2.png"
 import leaderboard from "../assets/projectsImg/leaderboard.png"
@@ -35,5 +41,5 @@ import budgetApp from "../assets/projectsImg/budgetApp.png"
 export {
     css, figma, freeCodeCamp, github, hackerRank, html, jest, js, linkedin, microverse, firebase, next, postgreSQL, rails, react,
     redux, ruby, mypic, mypic2, cursor, shayan, mercy, contactWhite, contactimg, Gmail, Hasnat, MobMenu, TVShow, WeatherApp, WorriorCar, leaderboard, budgetApp,
-    blueLine
+    blueLine, fire, express, circuit, mongoDB, arrowLeft, arrowRight
 }

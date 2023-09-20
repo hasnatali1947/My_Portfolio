@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { contactimg, contactWhite } from '../utilities/imports'
 import { useForm, ValidationError } from '@formspree/react';
 
-const contact = () => {
+const Contact = () => {
     const [state, handleSubmit] = useForm("xknlznek");
     const [showSuccessMessage, setShowSuccessMessage] = useState(false);
     const [name, setName] = useState("");
@@ -37,8 +37,6 @@ const contact = () => {
                         <h4>I WOULD BE GLAD TO HEAR FROM YOU</h4>
                     )}
                 </div>
-                {/* <div className="contact-blue-background-1"></div> */}
-                {/* <div className="contact-blue-background-2"></div> */}
                 <div className="formDiv">
                     <form action="https://formspree.io/f/xknlznek" method="post" onSubmit={handleSubmit}>
 
@@ -96,4 +94,4 @@ const contact = () => {
     )
 }
 
-export default contact;
+export default Contact;

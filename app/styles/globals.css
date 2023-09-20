@@ -7,6 +7,19 @@
     font-family: Poppins, sans-serif;
 }
 
+::-webkit-scrollbar {
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
 body {
     padding: 0%;
     margin: 0%;
@@ -14,10 +27,17 @@ body {
     background-color: rgb(248, 248, 248);
     font-family: Poppins,sans-serif;
     width: 100%;
-  }
+}
 
-  @media (min-width: 769px) {
+.Pages{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
+@media (min-width: 769px) {
+
+  
   .mobileMenu{
     display: none;
   }
@@ -26,7 +46,18 @@ body {
     display: none;
   }
 
-  
+  .about-blue-background-hero{
+    position: absolute;
+    left: 0px;
+    transform: rotateZ(15deg) translateX(-50%);
+    opacity: 0.2;
+    background-image: linear-gradient(to left, rgb(39, 203, 255), rgba(39, 203, 255, 0));
+    height: 60vh;
+    aspect-ratio: 1 / 1;
+    filter: blur(20px);
+    border-radius: 40px
+}
+ 
 .skillMainDivMoblie{
     display: none;
 }
@@ -247,6 +278,7 @@ nav{
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
     cursor: pointer;
+    animation: textload 1.2s ease-in-out;
 }
 
 .microverseSkill{
@@ -256,6 +288,7 @@ nav{
 }
 
 .microverseSkill2{
+    position: absolute;
     left: 22%;
     top: 20%;
 }
@@ -285,15 +318,41 @@ nav{
 /* /////////////// PROJECTS //////////////// */
 
 .projects{
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    width: 1000px;
+  
 }
 
 .projects h2{
     font-size: 40px;
+}
+
+.projects-top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.headingsProjects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.leftArrow img{
+    height: 40px;
+    cursor: pointer;
+}
+
+.RightArrow img{
+    height: 40px;
+    cursor: pointer;
 }
 
 .projects p{
@@ -303,35 +362,30 @@ nav{
     letter-spacing: 0.5px;
 }
 
+.project-container{
+    display: flex;
+    gap: 15px;
+    margin-top: 50px;
+    width: 700px;
+    overflow-x: scroll;
+}
+
 .ProjectImgs{
-    width: 100%;
-    height: auto;
-    transition: 0.5s ease;
+    height: 55vh;
+    width: 45vh;
+    border-radius: 30px;
+    object-fit: cover;
 }
 
-.ProjectImgs:hover{
-    transform: scale(1.1);
-}
-
-.projects-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    margin-top: 8vh;
-    gap: 2.5rem;
-    width: 90%;
-}
-
-.projects-container .projects-box{
+.projects-box{
     position: relative;
     display: flex;
-    width: 100%;
+    min-width: 280px;
     border-radius: 2rem;
-    box-shadow: 0 0 1rem;
     overflow: hidden;
 }
 
-.projects-box .projectDescription{
+.projectDescription{
     position: absolute;
     display: flex;
     justify-content: center;
@@ -348,7 +402,7 @@ nav{
     padding: 0 4rem;
     transition: 0.5s ease;
     transform: translateY(100%);
- 
+    
 }
 
 .projects-box:hover .projectDescription{
@@ -359,14 +413,14 @@ nav{
     font-size: 1.6rem;
     color: white;
     min-width: 40vh;
-
+    
 }
 
 .projectDescription p{
     font-size: 0.8rem;
     text-align: center;
     color: white;
-    min-width: 40vh;
+    width: 250px;
 }
 
 .projectDescription button{
@@ -387,7 +441,7 @@ nav{
 .projectBtns{
     display: flex;
     gap: 10px;
-}
+}  
 
   /* ////////////// ABOUT-SECTION////////////////// */
 
@@ -487,6 +541,10 @@ nav{
     margin-top: 5vh;
 }
 
+.skillsIcons{
+    width: 35px;
+}
+
 .topSkill{
     display: flex;
     gap: 15px;
@@ -504,12 +562,14 @@ nav{
     visibility: hidden;
     margin-top: -12vh;
     position: absolute;
-    border: 2px solid white;
-    padding: 3px;
+    background-color: white;
+    padding: 5px;
     border-radius: 10px;
     border-bottom-left-radius: 0px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
     transition: 0.3s;
+    font-size: 13px;
+    letter-spacing: -1px;
     }
     
     .cssDiv:hover .span{
@@ -552,11 +612,13 @@ nav{
     position: relative;
     overflow: hidden;
     margin-top: 100px;
+    width: 100%;
 }
 
 .recommendation_heading{
     font-size: 34px;
     font-weight: 700;
+    margin-top: 10px;
 }
 
 .only{
@@ -959,7 +1021,7 @@ nav{
     width: 100%;
 }
 
-.hasnatImage {
+.landing_page .hasnatImage {
     height: 17vh;
     margin-bottom: 25px;
     animation: textload 0.8s ease-in-out;
@@ -1120,8 +1182,7 @@ nav{
 }
 
 .microverseSkill2 {
-    left: 10%;
-    top: 7%;
+    display: none;
 }
 
 .freeCodeCampSkill{
@@ -1154,48 +1215,77 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    width: 76%;
+    overflow: hidden;
 }
 
-.projects-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.headingsProjects{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    margin-top: 8vh;
-    gap: 1rem;
-    width: 90%;
+    flex-direction: column;
 }
 
 .projects h2 {
-    font-size: 30px;
+    font-size: 29px;
     font-weight: bold;
+    text-align: center;
 }
 
 .projects p {
-    font-size: 14px;
+    font-size: 13px;
     text-align: center;
     margin-top: 2vh;
+    width: 90%;
+}
+
+.projects-top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.leftArrow img{
+    height: 35px;
+    cursor: pointer;
+}
+
+.RightArrow img{
+    height: 35px;
+    cursor: pointer;
+}
+
+
+.project-container{
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+    max-width: 100%;
+    overflow-x: scroll;
 }
 
 .ProjectImgs{
-    width: 100%;
-    height: auto;
-    transition: 0.5s ease;
+    height: 50vh;
+    width: 35vh;
+    border-radius: 30px;
 }
 
 .ProjectImgs:hover{
     transform: scale(1.1);
+    transition: 0.3s ease-in-out;
 }
 
-.projects-container .projects-box{
+.projects-box{
     position: relative;
     display: flex;
-    width: 100%;
-    border-radius: 1.2rem;
-    box-shadow: 0 0 1rem;
+    min-width: 200px;
+    border-radius: 30px;
     overflow: hidden;
 }
 
-.projects-box .projectDescription{
+.projectDescription{
     position: absolute;
     display: flex;
     justify-content: center;
@@ -1252,7 +1342,9 @@ nav{
     display: flex;
     flex-direction: column;
     gap: 5px;
-}
+} 
+
+
 
   /* ///////////// ABOUT SECTION /////////////////// */
 
@@ -1268,7 +1360,7 @@ nav{
 
 .aboutSection h1 {
     position: absolute;
-    top: 4.6%;
+    top: 2%;
     font-size: 30px;
     letter-spacing: 5px;
     font-weight: 600;
@@ -1283,7 +1375,7 @@ nav{
     background-color: white;
     overflow: hidden;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.384);
-  }
+}
 
   .AboutDescription {
     width: 68%;
@@ -1293,7 +1385,6 @@ nav{
     text-align: start;
     height: 60vh;
     padding: 15px;
-    /* border: 2px solid; */
 }
 
 .AboutDescription span {
@@ -1306,19 +1397,19 @@ nav{
     color:  rgb(6, 110, 142);
     font-weight: bold;
   }
-
+  
   .MypicDiv{
     width: 35%;
   }
-
+  
   .Mypic {
-    height: 65vh;
+      height: 65vh;
     width: 100%;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
 }
 
-  .aboutSection h2{
+.aboutSection h2{
     margin-top: 5vh;
     font-size: 20px;
     font-weight: 600;
@@ -1349,13 +1440,19 @@ nav{
     display: none;
 }
 
-.SkillContainer{
+.SkillContainerMoblie{
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     width: 100%;
     padding-bottom: 5px;
+    height: 25vh;
+    padding-top: 15px;
+}
+
+.SkillContainer{
+    display: none;
 }
 
 .skillMainDivMoblie {
@@ -1379,6 +1476,7 @@ nav{
         margin-top: 4vh;
         gap: 10px;
         justify-content: center;
+        align-items: center;
         width: 100%;
     }
 
@@ -1443,6 +1541,7 @@ nav{
         align-items: center;
         justify-content: center;
         position: relative;
+        width: 100%;
         overflow: hidden;
     }
     

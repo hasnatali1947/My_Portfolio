@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import { cursor, shayan, mercy } from "../utilities/imports"
 import { useScroll } from "framer-motion";
 
-const recommendation = () => {
+const Recommendation = () => {
 
     const [scrollYPosition, setScrollYPosition] = useState();
     const { scrollYProgress } = useScroll();
@@ -62,4 +62,4 @@ const recommendation = () => {
     )
 }
 
-export default recommendation;
+export default Recommendation;
