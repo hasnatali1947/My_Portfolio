@@ -401,8 +401,7 @@ nav{
     background: linear-gradient(rgba(0, 0, 0, 0.1),  rgb(12, 156, 166));
     padding: 0 4rem;
     transition: 0.5s ease;
-    transform: translateY(100%);
-    
+    transform: translateY(100%);   
 }
 
 .projects-box:hover .projectDescription{
@@ -593,14 +592,14 @@ nav{
     .about-blue-background-2{
         position: absolute;
         right: 15%;
-        margin-top: 300px;
+        top: 10px;
         transform: rotateZ(15deg) translateX(50%);
         opacity: 0.2;
         background-image: linear-gradient(to right, rgb(255, 39, 39), rgba(255, 39, 39, 0));
-        height: 35vh;
+        height: 27vh;
         aspect-ratio: 1 / 1;
         filter: blur(20px);
-        border-radius: 40px;
+        border-radius: 60px;
     }
 
     /* ///////////////////////////////////////////////////// */
@@ -937,9 +936,6 @@ cursor: pointer;
         transform: rotateZ(45deg);
         
     }
-
-/* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
-
 
 header{
     width: 100%;
@@ -1343,8 +1339,6 @@ nav{
     flex-direction: column;
     gap: 5px;
 } 
-
-
 
   /* ///////////// ABOUT SECTION /////////////////// */
 
@@ -1822,5 +1816,4 @@ cursor: pointer;
     color: rgb(39, 203, 255);
     font-family: 'Times New Roman', Times, serif;
 }
-
 }
