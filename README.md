@@ -71,7 +71,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> <a href="new-portfolio-qc2g.vercel.app" >Visit Live</a>
+> <a href="https://new-portfolio-three-chi.vercel.app/" >Visit Live</a>
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
