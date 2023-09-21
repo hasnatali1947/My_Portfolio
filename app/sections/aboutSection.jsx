@@ -4,7 +4,7 @@ import { useScroll } from "framer-motion";
 
 import {
     css, figma, freeCodeCamp, github, hackerRank, html, jest, js, firebase, next, postgreSQL, rails, react,
-    redux, ruby, mypic2, microverse, fire, express, circuit,  mongoDB
+    redux, ruby, mypic2, microverse, fire, express, circuit, mongoDB
 } from "../utilities/imports"
 
 const AboutSection = () => {
@@ -20,6 +20,8 @@ const AboutSection = () => {
 
     return (
         <section className="aboutSection">
+            <div className="aboutDiv">
+
             <h1>SOFTWARE <br />DEVELOPER</h1>
             <div className="Aboutcontainer">
                 <div className="AboutDescription">
@@ -31,6 +33,7 @@ const AboutSection = () => {
                 <div className="MypicDiv">
                     <img className="Mypic" src={mypic2.src} alt="Mypic" />
                 </div>
+            </div>
             </div>
 
             <div className="about-blue-background-1"></div>
@@ -84,7 +87,7 @@ const AboutSection = () => {
                         <div className="cssDiv">
                             <span className="span Figma">Node.js/Express</span>
                             <img src={express.src} alt="css" />
-                        </div>     
+                        </div>
                     </div>
                     <div className="bottomSkill">
 
@@ -128,7 +131,7 @@ const AboutSection = () => {
                 </div>
             </div>
 
-{/* /////////////////////////////// Mobile Skills/////////////////////////////////////////////// */} 
+            {/* /////////////////////////////// Mobile Skills/////////////////////////////////////////////// */}
 
             <div className="SkillContainerMoblie">
 
@@ -174,7 +177,7 @@ const AboutSection = () => {
                             <span className="span Figma">Node.js / Express</span>
                             <img src={express.src} alt="css" />
                         </div>
-                      
+
 
                     </div>
                     <div className="bottomSkill">
