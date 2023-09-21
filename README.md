@@ -71,7 +71,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> <a href="[new-portfolio-su6e.vercel.app](https://new-portfolio-su6e-git-readme-hasnatking1947-gmailcom.vercel.app)" >Visit Live</a>
+> <a href="(https://new-portfolio-su6e-git-readme-hasnatking1947-gmailcom.vercel.app)" >Visit Live</a>
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
