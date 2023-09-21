@@ -88,7 +88,11 @@ const LandingPage = () => {
         </p>
         <button onClick={() => scrollToSection("contactSection")} className="connectMe">CONNECT WITH ME</button>
         <button onClick={() => scrollToSection("contactSection")} className="TopButton"><img src={Gmail.src} alt="Gmail Logo" /></button>
-        <a href="https://react.dev/"><img className="skillsOnLanding microverseSkill" src={react.src} alt="" /></a>
+        <div>
+          {/* <span>MI</span> */}
+          <a href="https://react.dev/"><img className="skillsOnLanding microverseSkill" src={react.src} alt="" /></a>
+
+        </div>
 
         <a href="https://nextjs.org/"><img className="skillsOnLanding freeCodeCampSkill" src={next.src} alt="" /></a>
       </section>
