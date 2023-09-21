@@ -48,7 +48,7 @@ const Recommendation = () => {
 
                 <div className="recommendationDiv">
                     <div className="shayanRecommendation">
-                        <p>I've had the privilege of working closely with Hasnat for 1 year, and I'm consistently impressed by his web development skills. Hasnat is a highly talented and innovative developer who consistently delivers exceptional results.</p>
+                        <p>I&apos;ve had the privilege of working closely with Hasnat for 1 year, and I&apos;m consistently impressed by his web development skills. Hasnat is a highly talented and innovative developer who consistently delivers exceptional results.</p>
                         <div className="shayanimgdiv">
                             <img className="shayanImg" src={Abbas.src} alt="ShayanImg" />
                             <div>
