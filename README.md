@@ -71,7 +71,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> <a href="my-portfolio-mauve-eight.vercel.app" >Visit Live</a>
+> <a href="https://my-portfolio-mauve-eight.vercel.app/" >Visit Live</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
