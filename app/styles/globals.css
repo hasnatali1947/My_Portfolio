@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 *{
-    margin: 0%;
-    padding: 0%;
-    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
     font-family: Poppins, sans-serif;
+    scroll-behavior: smooth; 
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -37,7 +45,6 @@ body {
 
 @media (min-width: 769px) {
 
-  
   .mobileMenu{
     display: none;
   }
@@ -63,12 +70,19 @@ body {
 }
 
 header{
+    display: flex;
+    align-items: center;
     width: calc(100% - 20px) ;
     height: 7vh;
     position: fixed;
     background-color: rgb(248, 248, 248);
     z-index: 30;
     padding: 10px 10px;
+}
+
+.headerRightDisktop{
+    color: rgba(4, 4, 4, 0.88);
+    text-decoration: none;
 }
 
 nav{
@@ -324,7 +338,6 @@ nav{
     align-items: center;
     height: 100vh;
     width: 1000px;
-  
 }
 
 .projects h2{
@@ -519,22 +532,6 @@ nav{
     margin-top: 5vh;
     font-size: 22px;
   }
-
-  /* .reactDiv{
-    cursor: default;
-    padding: 10px;
-    width: 30px;
-    height: 30px;
-    border-radius: 8px;
-    background-color: white;
-    display: flex;
-    z-index: 9;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
-  } */
 
   .cssDiv{
     position: relative;
@@ -918,6 +915,13 @@ cursor: pointer;
 }
 
 @media screen and (max-width: 769px) {
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+        font-family: Poppins, sans-serif;
+    }
 
     body {
         background-color: rgb(248, 248, 248);

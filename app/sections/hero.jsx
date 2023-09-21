@@ -26,7 +26,6 @@ const LandingPage = () => {
         });
       });
 
-      // Select elements with class "landing_page"
       const scrollElements = document.querySelectorAll(".landing_page");
 
       scrollElements.forEach((el) => observer.observe(el));
@@ -34,11 +33,12 @@ const LandingPage = () => {
   }, []);
 
   const scrollToSection = (sectionId) => {
-    const section = document.querySelector(`.${sectionId}`);
+    const section = document.querySelector(`#${sectionId}`);
     setIsMobileMenuOpen(false);
 
     if (section) {
       setTimeout(() => {
+        console.log(1);
         section.scrollIntoView({ behavior: "smooth" });
       }, 50);
     }
@@ -57,9 +57,9 @@ const LandingPage = () => {
           </ul>
           <ul className="headerRight">
             <li onClick={toggleMobileMenu} className="mobMenu"><img src={MobMenu.src} alt="MobMenu" /></li>
-            <li onClick={() => scrollToSection("projects")} className="headerProject headerRightDisktop">PROJECTS</li>
-            <li onClick={() => scrollToSection("aboutSection")} className="headerAbout headerRightDisktop">ABOUT</li>
-            <li onClick={() => scrollToSection("contactSection")} className="headerContact headerRightDisktop">CONTACT</li>
+            <li><a href="#projectsId" className="headerProject headerRightDisktop">PROJECTS</a></li>
+            <li><a href="#aboutSectionId" className="headerAbout headerRightDisktop">ABOUT</a></li>
+            <li><a href="#contactSectionId" className="headerContact headerRightDisktop">CONTACT</a></li>
           </ul>
         </nav>
       </header>
@@ -69,9 +69,9 @@ const LandingPage = () => {
         <div className={`mobileMenu ${isMobileMenuOpen ? 'open' : ''}`}>
           <ul>
             <li onClick={closeMobileMenu} className="Xicon">+</li>
-            <li onClick={() => scrollToSection("projects")} className={`${isMobileMenuOpen ? 'open' : ''}`}>PROJECT</li>
-            <li onClick={() => scrollToSection("aboutSection")}>ABOUT</li>
-            <li onClick={() => scrollToSection("contactSection")}>CONTACT</li>
+            <li onClick={() => scrollToSection("projectsId")} className={`${isMobileMenuOpen ? 'open' : ''}`}>PROJECT</li>
+            <li onClick={() => scrollToSection("aboutSectionId")}>ABOUT</li>
+            <li onClick={() => scrollToSection("contactSectionId")}>CONTACT</li>
           </ul>
 
         </div>
@@ -87,7 +87,7 @@ const LandingPage = () => {
           React and Ruby-On-Rails<br /> I bring ideas to life
         </p>
         <button onClick={() => scrollToSection("contactSection")} className="connectMe">CONNECT WITH ME</button>
-        <button onClick={() => scrollToSection("contactSection")} className="TopButton"><img src={Gmail.src} alt="Gmail Logo" /></button>
+        <button onClick={() => scrollToSection("contactSectionId")} className="TopButton"><img src={Gmail.src} alt="Gmail Logo" /></button>
         <a href="https://react.dev/"><img className="skillsOnLanding microverseSkill" src={react.src} alt="" /></a>
         <a href="https://nextjs.org/"><img className="skillsOnLanding freeCodeCampSkill" src={next.src} alt="" /></a>
       </section>

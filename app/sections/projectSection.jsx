@@ -11,26 +11,26 @@ const ProjectsSection = () => {
 
     const scrollLeft = () => {
         if (projectContainerRef.current) {
-          const container = projectContainerRef.current;
-          const newPosition = scrollPosition - scrollIncrement;
-          const minScrollPosition = 0;
-          setScrollPosition(Math.max(newPosition, minScrollPosition));
-          container.scrollLeft = Math.max(newPosition, minScrollPosition);
+            const container = projectContainerRef.current;
+            const newPosition = scrollPosition - scrollIncrement;
+            const minScrollPosition = 0;
+            setScrollPosition(Math.max(newPosition, minScrollPosition));
+            container.scrollLeft = Math.max(newPosition, minScrollPosition);
         }
-      };
-      
-      const scrollRight = () => {
+    };
+
+    const scrollRight = () => {
         if (projectContainerRef.current) {
-          const container = projectContainerRef.current;
-          const newPosition = scrollPosition + scrollIncrement;
-          const maxScrollPosition = container.scrollWidth - container.clientWidth;
-          setScrollPosition(Math.min(newPosition, maxScrollPosition));
-          container.scrollLeft = Math.min(newPosition, maxScrollPosition);
+            const container = projectContainerRef.current;
+            const newPosition = scrollPosition + scrollIncrement;
+            const maxScrollPosition = container.scrollWidth - container.clientWidth;
+            setScrollPosition(Math.min(newPosition, maxScrollPosition));
+            container.scrollLeft = Math.min(newPosition, maxScrollPosition);
         }
-      };
+    };
 
     return (
-        <section className="projects" id="projects">
+        <section className="projects" id="projectsId">
             <div className="projects-top">
                 <div onClick={scrollLeft} className="leftArrow"><img src={arrowLeft.src} alt="" /></div>
                 <div className="headingsProjects">
@@ -53,26 +53,24 @@ const ProjectsSection = () => {
                         <div className="projectBtns">
                             <a href="https://hasnatali1947.github.io/Warrior-cars/"><button className="btn seelive">SEE LIVE</button></a>
                             <a href="https://github.com/hasnatali1947/Warrior-cars#-live-demo-"> <button className="btn seecode">SEE CODE</button></a>
-                           
                         </div>
                     </div>
                 </div>
 
                 <div className="projects-box">
-                <img className="ProjectImgs" src={TVShow.src} alt="" />
+                    <img className="ProjectImgs" src={TVShow.src} alt="" />
                     <div className="projectDescription">
                         <h4>TV-Show</h4>
                         <p>This website displays a list of TV shows with likes and offers detailed pages for each show, complete with comment sections.</p>
                         <div className="projectBtns">
                             <a href="https://ubdanam.github.io/TV-Show/"><button className="btn seelive">SEE LIVE</button></a>
                             <a href="https://github.com/hasnatali1947/TV-Show"><button className="btn seecode">SEE CODE</button></a>
-                            
                         </div>
                     </div>
                 </div>
 
                 <div className="projects-box">
-                <img className="ProjectImgs" src={WeatherApp.src} alt="" />
+                    <img className="ProjectImgs" src={WeatherApp.src} alt="" />
                     <div className="projectDescription">
                         <h4>Weather-App</h4>
                         <p>This is a weather app project where users can check the weather for cities all over the world.</p>
@@ -84,20 +82,19 @@ const ProjectsSection = () => {
                 </div>
 
                 <div className="projects-box">
-                <img className="ProjectImgs" src={leaderboard.src} alt="" />
+                    <img className="ProjectImgs" src={leaderboard.src} alt="" />
                     <div className="projectDescription">
                         <h4>Leaderboard</h4>
                         <p>The leader-board website shows player scores and lets you submit your own, using an external Leader-board API service to store the data.</p>
                         <div className="projectBtns">
                             <a href="https://hasnatali1947.github.io/Leaderboard/dist"><button className="btn seelive">SEE LIVE</button></a>
                             <a href="https://github.com/hasnatali1947/Leaderboard"><button className="btn seecode">SEE CODE</button></a>
-                            
                         </div>
                     </div>
                 </div>
 
                 <div className="projects-box">
-                <img className="ProjectImgs" src={budgetApp.src} alt="" />
+                    <img className="ProjectImgs" src={budgetApp.src} alt="" />
                     <div className="projectDescription">
                         <h4>Budget Apps</h4>
                         <p>A mobile budget management app that tracks your spending by category through a list of transactions</p>
@@ -107,7 +104,6 @@ const ProjectsSection = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
 
         </section>

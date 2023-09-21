@@ -26,7 +26,7 @@ const Contact = () => {
 
     return (
         <>
-            <section className="contactSection" id="contactSection">
+            <section className="contactSection" id="contactSectionId">
                 <div>
                     <h2>CONTACT</h2>
                     {showSuccessMessage ? (
