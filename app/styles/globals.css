@@ -331,7 +331,7 @@ nav{
 
 /* /////////////// PROJECTS //////////////// */
 
-.projects{
+#projectsId{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -340,7 +340,7 @@ nav{
     width: 1000px;
 }
 
-.projects h2{
+#projectsId h2{
     font-size: 40px;
 }
 
@@ -379,7 +379,6 @@ nav{
     display: flex;
     gap: 15px;
     margin-top: 50px;
-    width: 700px;
     width: 100%;
     overflow-x: scroll;
 }
@@ -436,6 +435,12 @@ nav{
     width: 250px;
 }
 
+.projectDescription span{
+   padding-top: 10px;
+    color: white;
+    width: 250px;
+}
+
 .projectDescription button{
     display: inline-flex;
     justify-content: center;
@@ -458,7 +463,7 @@ nav{
 
   /* ////////////// ABOUT-SECTION////////////////// */
 
-  .aboutSection{
+  #aboutSectionId{
     display: flex;
     position: relative;
     align-items: center;
@@ -711,7 +716,7 @@ nav{
 
 /* ///////////////////// CONTACT SECTION//////////////////////////// */
 
-.contactSection{
+#contactSectionId{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1348,6 +1353,13 @@ nav{
     border: 2px solid;
     min-width: 20vh;
 }
+
+.projectDescription span{
+    padding-top: 10px;
+    color: white;
+    min-width: 20vh;
+ }
+ 
 
 .projectDescription button{
     display: inline-flex;

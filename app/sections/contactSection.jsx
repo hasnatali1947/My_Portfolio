@@ -41,8 +41,8 @@ const Contact = () => {
                     <form action="https://formspree.io/f/xknlznek" method="post" onSubmit={handleSubmit}>
 
                         <div className="inputsimgDiv">
-                            <img className="contactWhiteImg" src={contactWhite.src} alt="" />
-                            <img className="contactimg" src={contactimg.src} alt="" />
+                            <img className="contactWhiteImg" src={contactWhite.src} alt="FormWhiteBG" />
+                            <img className="contactimg" src={contactimg.src} alt="FormImg" />
                         </div>
 
                         <div className="inputsDiv">
@@ -73,8 +73,6 @@ const Contact = () => {
                             <textarea placeholder="MESSAGE" required name="message" onChange={(e) => setMessage(e.target.value)} value={message}></textarea>
                             <button className="box" type="submit" disabled={state.submitting}>
                                 SUBMIT
-                                {/* <span>SUBMIT</span> 
-                                <i></i> */}
                             </button>
                         </div>
                     </form>
@@ -84,9 +82,9 @@ const Contact = () => {
                 <footer>
                     <h4 className="footerH4">HAS<span className="N">N</span>AT</h4>
                     <ul>
-                        <a className="a_tag" href="https://docs.google.com/document/d/1IVhWvaHmA0EmR59zDbl8iizvOmerYMpAO1qFseMy0-o/edit?usp=sharing"><li>RESUME</li></a>
-                        <a className="a_tag" href="https://www.linkedin.com/in/hasnattali/"><li>LINKEDIN</li></a>
-                        <a className="a_tag" href="https://github.com/hasnatali1947"><li>GITHUB</li></a>
+                        <a className="a_tag" href="https://docs.google.com/document/d/1IVhWvaHmA0EmR59zDbl8iizvOmerYMpAO1qFseMy0-o/edit?usp=sharing" target="_blank"><li>RESUME</li></a>
+                        <a className="a_tag" href="https://www.linkedin.com/in/hasnattali/" target="_blank"><li>LINKEDIN</li></a>
+                        <a className="a_tag" href="https://github.com/hasnatali1947" target="_blank"><li>GITHUB</li></a>
                     </ul>
                 </footer>
             </footer>

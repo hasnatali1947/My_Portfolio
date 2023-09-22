@@ -50,9 +50,10 @@ const ProjectsSection = () => {
                     <div className="projectDescription">
                         <h4>Warrior Cars</h4>
                         <p>Castop project is my first near real-work project experience. I proceeded to style the content focusing on a mobile-first approach.</p>
+                        <span><b>TECH STACK:</b> HTML5, CSS</span>
                         <div className="projectBtns">
-                            <a href="https://hasnatali1947.github.io/Warrior-cars/"><button className="btn seelive">SEE LIVE</button></a>
-                            <a href="https://github.com/hasnatali1947/Warrior-cars#-live-demo-"> <button className="btn seecode">SEE CODE</button></a>
+                            <a href="https://hasnatali1947.github.io/Warrior-cars/" target="_blank"><button className="btn seelive">SEE LIVE</button></a>
+                            <a href="https://github.com/hasnatali1947/Warrior-cars#-live-demo-" target="_blank"> <button className="btn seecode">SEE CODE</button></a>
                         </div>
                     </div>
                 </div>
@@ -62,9 +63,10 @@ const ProjectsSection = () => {
                     <div className="projectDescription">
                         <h4>TV-Show</h4>
                         <p>This website displays a list of TV shows with likes and offers detailed pages for each show, complete with comment sections.</p>
+                        <span><b>TECH STACK:</b> HTML5, CSS, JavaScript</span>
                         <div className="projectBtns">
-                            <a href="https://ubdanam.github.io/TV-Show/"><button className="btn seelive">SEE LIVE</button></a>
-                            <a href="https://github.com/hasnatali1947/TV-Show"><button className="btn seecode">SEE CODE</button></a>
+                            <a href="https://ubdanam.github.io/TV-Show/" target="_blank"><button className="btn seelive">SEE LIVE</button></a>
+                            <a href="https://github.com/hasnatali1947/TV-Show" target="_blank"><button className="btn seecode">SEE CODE</button></a>
                         </div>
                     </div>
                 </div>
@@ -74,9 +76,10 @@ const ProjectsSection = () => {
                     <div className="projectDescription">
                         <h4>Weather-App</h4>
                         <p>This is a weather app project where users can check the weather for cities all over the world.</p>
+                        <span className="Tech-stack"><b>TECH STACK:</b> HTML5, CSS, React, Redux</span>
                         <div className="projectBtns">
-                            <a href="https://weather-app-57lg.onrender.com/"><button className="btn seelive">SEE LIVE</button></a>
-                            <a href="https://github.com/hasnatali1947/Weather-App"><button className="btn seecode">SEE CODE</button></a>
+                            <a href="https://weather-app-57lg.onrender.com/" target="_blank"><button className="btn seelive">SEE LIVE</button></a>
+                            <a href="https://github.com/hasnatali1947/Weather-App" target="_blank"><button className="btn seecode">SEE CODE</button></a>
                         </div>
                     </div>
                 </div>
@@ -86,9 +89,10 @@ const ProjectsSection = () => {
                     <div className="projectDescription">
                         <h4>Leaderboard</h4>
                         <p>The leader-board website shows player scores and lets you submit your own, using an external Leader-board API service to store the data.</p>
+                        <span><b>TECH STACK:</b> HTML5, CSS, JavaScript</span>
                         <div className="projectBtns">
-                            <a href="https://hasnatali1947.github.io/Leaderboard/dist"><button className="btn seelive">SEE LIVE</button></a>
-                            <a href="https://github.com/hasnatali1947/Leaderboard"><button className="btn seecode">SEE CODE</button></a>
+                            <a href="https://hasnatali1947.github.io/Leaderboard/dist" target="_blank"><button className="btn seelive">SEE LIVE</button></a>
+                            <a href="https://github.com/hasnatali1947/Leaderboard" target="_blank"><button className="btn seecode">SEE CODE</button></a>
                         </div>
                     </div>
                 </div>
@@ -98,9 +102,10 @@ const ProjectsSection = () => {
                     <div className="projectDescription">
                         <h4>Budget Apps</h4>
                         <p>A mobile budget management app that tracks your spending by category through a list of transactions</p>
+                        <span><b>TECH STACK:</b> HTML5, CSS, Ruby-On-Rails</span>
                         <div className="projectBtns">
-                            <a href="https://rails-capston-web-service.onrender.com"> <button className="btn seelive">SEE LIVE</button></a>
-                            <a href="https://github.com/hasnatali1947/rails_capston#live-demo"><button className="btn seecode">SEE CODE</button></a>
+                            <a href="https://rails-capston-web-service.onrender.com" target="_blank"><button className="btn seelive">SEE LIVE</button></a>
+                            <a href="https://github.com/hasnatali1947/rails_capston#live-demo" target="_blank"><button className="btn seecode">SEE CODE</button></a>
                         </div>
                     </div>
                 </div>

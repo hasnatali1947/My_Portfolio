@@ -39,7 +39,7 @@ const LandingPage = () => {
     if (section) {
       setTimeout(() => {
         console.log(1);
-        section.scrollIntoView({ behavior: "smooth" });
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
       }, 50);
     }
   };
@@ -50,16 +50,16 @@ const LandingPage = () => {
         <nav>
           <ul className="headerLeft">
             <li>
-              <a className="a_tag" href="https://github.com/hasnatali1947"><img src={github.src} alt="GitHub Logo" /></a>
-              <a className="a_tag" href="https://www.linkedin.com/in/hasnattali/"><img src={linkedin.src} alt="linkedin Logo" /></a>
+              <a className="a_tag" href="https://github.com/hasnatali1947" target="_blank"><img src={github.src} alt="GitHub Logo" /></a>
+              <a className="a_tag" href="https://www.linkedin.com/in/hasnattali/" target="_blank"><img src={linkedin.src} alt="linkedin Logo" /></a>
 
             </li>
           </ul>
           <ul className="headerRight">
             <li onClick={toggleMobileMenu} className="mobMenu"><img src={MobMenu.src} alt="MobMenu" /></li>
-            <li><a href="#projectsId" className="headerProject headerRightDisktop">PROJECTS</a></li>
-            <li><a href="#aboutSectionId" className="headerAbout headerRightDisktop">ABOUT</a></li>
-            <li><a href="#contactSectionId" className="headerContact headerRightDisktop">CONTACT</a></li>
+            <li><a href="#projectsId" onClick={(e) => { e.preventDefault(); scrollToSection("projectsId"); }} className="headerProject headerRightDisktop">PROJECTS</a></li>
+            <li><a href="#aboutSectionId" onClick={(e) => { e.preventDefault(); scrollToSection("aboutSectionId"); }} className="headerAbout headerRightDisktop">ABOUT</a></li>
+            <li><a href="#contactSectionId" onClick={(e) => { e.preventDefault(); scrollToSection("contactSectionId"); }} className="headerContact headerRightDisktop">CONTACT</a></li>
           </ul>
         </nav>
       </header>
@@ -88,8 +88,8 @@ const LandingPage = () => {
         </p>
         <button onClick={() => scrollToSection("contactSection")} className="connectMe">CONNECT WITH ME</button>
         <button onClick={() => scrollToSection("contactSectionId")} className="TopButton"><img src={Gmail.src} alt="Gmail Logo" /></button>
-        <a href="https://react.dev/"><img className="skillsOnLanding microverseSkill" src={react.src} alt="" /></a>
-        <a href="https://nextjs.org/"><img className="skillsOnLanding freeCodeCampSkill" src={next.src} alt="" /></a>
+        <a href="https://react.dev/" target="_blank"><img className="skillsOnLanding microverseSkill" src={react.src} alt="" /></a>
+        <a href="https://nextjs.org/" target="_blank"><img className="skillsOnLanding freeCodeCampSkill" src={next.src} alt="" /></a>
       </section>
     </>
   )

@@ -38,7 +38,7 @@ const AboutSection = () => {
 
             <div className="about-blue-background-1"></div>
             <div className="about-blue-background-2"></div>
-            <a href="https://www.microverse.org/"><img className="skillsOnLanding microverseSkill2" src={microverse.src} alt="microverseIcon" /></a>
+            <a href="https://www.microverse.org/" target="_blank"><img className="skillsOnLanding microverseSkill2" src={microverse.src} alt="microverseIcon" /></a>
 
             <h2>MY SKILL SET</h2>
 
