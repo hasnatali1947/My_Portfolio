@@ -605,6 +605,18 @@ nav{
         transition: opacity 0.8s;
     }
 
+    .skillsSpan{
+        display: flex;
+        justify-content: center;
+        width: 70px;
+    }
+
+    .EffectiveSkill{
+        display: flex;
+        justify-content: center;
+        width: 140px;
+    }
+
     .about-blue-background-1{
         position: absolute;
         left: 0px;

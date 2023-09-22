@@ -79,7 +79,7 @@ const AboutSection = () => {
                             <img src={js.src} alt="css" />
                         </div>
                         <div className="cssDiv">
-                            <span className="span Figma">Fast Learner</span>
+                            <span className="span Figma skillsSpan">Fast Learner</span>
                             <img src={fire.src} alt="css" />
                         </div>
                         <div className="cssDiv">
@@ -114,7 +114,7 @@ const AboutSection = () => {
                             <img src={redux.src} alt="css" />
                         </div>
                         <div className="cssDiv">
-                            <span className="span Figma">Effective Communicator</span>
+                            <span className="span Figma EffectiveSkill">Effective Communicator</span>
                             <img src={circuit.src} alt="css" />
                         </div>
                         <div className="cssDiv">
