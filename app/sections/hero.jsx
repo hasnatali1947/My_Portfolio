@@ -78,9 +78,14 @@ const LandingPage = () => {
 
         <img className="hasnatImage" src={Hasnat.src} alt="" />
         <h3>Hi, I&apos;m Hasnat<span role="img" aria-label="wave">🖐</span></h3>
-        <img className="blueLine" src={blueLine.src} alt="blueLine" />
         <h1>
-          Building digital <br /> products, brands, and <br /> experience.
+         <div className="blueLineDiv">
+          Building digital
+          <div>
+          <img className="blueLine" src={blueLine.src} alt="blueLine" />
+          </div>
+          </div> 
+          products, brands, and <br /> experience.
         </h1>
         <p>
           a website <b>Full-Stack</b> developer <br /> Specialize in
