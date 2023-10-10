@@ -173,10 +173,17 @@ nav{
     letter-spacing: -2px;
 }
 
+.blueLineDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .landing_page .blueLine{
     position: absolute;
+    transform: translateY(-13px);
     width: 180px;
-    margin-right: 140px;
+    margin-left: -150px;
     z-index: -1;
     animation: textload 1.2s ease-in-out;
 }
@@ -217,8 +224,8 @@ nav{
     position: fixed;
     justify-content: center;
     align-items: center;
-    width: 80px;
-    height: 30px;
+    width: 55px;
+    height: 50px;
     font-weight: 600;
     letter-spacing: 1px;
     background: white;
@@ -227,7 +234,7 @@ nav{
     bottom: 40px;
     padding-top: 15px;
     padding-bottom: 15px;
-    border-radius: 30px;
+    border-radius: 50%;
     border: none;
     color: white;
     z-index: 10;
@@ -380,7 +387,8 @@ nav{
     gap: 15px;
     margin-top: 50px;
     width: 100%;
-    overflow-x: scroll;
+    overflow-x: hidden;
+    white-space: nowrap; 
 }
 
 .ProjectImgs{
@@ -1027,9 +1035,6 @@ nav{
 }
 
 .headerRight{
-    display: flex;
-    align-items: center;
-    gap: 22px;
     margin-right: 40px;
     list-style: none;
     height: 7vh;
@@ -1084,10 +1089,17 @@ nav{
     width: 100%;
 }
 
+.blueLineDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .landing_page .blueLine{
     position: absolute;
+    transform: translateY(5px);
     width: 140px;
-    margin-right: 120px;
+    margin-left: -120px;
     z-index: -1;
     top: 47%;
     animation: textload 1.2s ease-in-out;
@@ -1125,8 +1137,8 @@ nav{
     position: fixed;
     justify-content: center;
     align-items: center;
-    width: 70px;
-    height: 25px;
+    width: 50px;
+    height: 45px;
     font-weight: 600;
     letter-spacing: 1px;
     background: white;
@@ -1134,7 +1146,7 @@ nav{
     right: 40px;
     bottom: 40px;
     padding: 5px 10px;
-    border-radius: 10px;
+    border-radius: 50%;
     border: none;
     color: white;
     z-index: 10;
@@ -1306,7 +1318,8 @@ nav{
     gap: 10px;
     margin-top: 50px;
     max-width: 100%;
-    overflow-x: scroll;
+    overflow-x: hidden;
+    white-space: nowrap; 
 }
 
 .ProjectImgs{
@@ -1879,4 +1892,29 @@ cursor: pointer;
     color: rgb(39, 203, 255);
     font-family: 'Times New Roman', Times, serif;
 }
+}
+
+@media screen and (max-width: 340px){
+    .landing_page h1 {
+        font-size: 26px;
+        margin-top: 3vh;
+        animation: textload 1.2s ease-in-out;
+        width: 100%;
+    }
+
+    .blueLineDiv{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .landing_page .blueLine{
+        position: absolute;
+        transform: translateY(9px);
+        width: 130px;
+        margin-left: -110px;
+        z-index: -1;
+        top: 47%;
+        animation: textload 1.2s ease-in-out;
+    }
 }

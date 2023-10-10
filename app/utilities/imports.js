@@ -33,13 +33,13 @@ import mongoDB from "../assets/images/mongoDB.png"
 import arrowLeft from "../assets/images/arrow-left.svg"
 import arrowRight from "../assets/images/arrow-right.svg"
 import TVShow from "../assets/projectsImg/img1.png"
-import WorriorCar from "../assets/projectsImg/img2.png"
+import housesReservation from "../assets/projectsImg/houses-reservation.png"
 import leaderboard from "../assets/projectsImg/leaderboard.png"
-import WeatherApp from "../assets/projectsImg/weatherApp.png"
-import budgetApp from "../assets/projectsImg/budgetApp.png"
+import WeatherApp from "../assets/projectsImg/weather-App.png"
+import warriorCars from "../assets/projectsImg/warriorCars.png"
 
 export {
     css, figma, freeCodeCamp, github, hackerRank, html, jest, js, linkedin, microverse, firebase, next, postgreSQL, rails, react,
-    redux, ruby, mypic2, cursor, shayan, mercy, Abbas, contactWhite, contactimg, Gmail, Hasnat, MobMenu, TVShow, WeatherApp, WorriorCar, leaderboard, budgetApp,
+    redux, ruby, mypic2, cursor, shayan, mercy, Abbas, contactWhite, contactimg, Gmail, Hasnat, MobMenu, TVShow, WeatherApp, housesReservation, leaderboard, warriorCars,
     blueLine, fire, express, circuit, mongoDB, arrowLeft, arrowRight
 }

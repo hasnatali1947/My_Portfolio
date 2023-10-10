@@ -82,10 +82,6 @@ const AboutSection = () => {
                             <span className="span Figma skillsSpan">Fast Learner</span>
                             <img src={fire.src} alt="css" />
                         </div>
-                        <div className="cssDiv">
-                            <span className="span Figma">Node.js/Express</span>
-                            <img src={express.src} alt="css" />
-                        </div>
                     </div>
                     <div className="bottomSkill">
 
@@ -118,10 +114,6 @@ const AboutSection = () => {
                             <img src={circuit.src} alt="css" />
                         </div>
                         <div className="cssDiv">
-                            <span className="span Figma">MongoDB</span>
-                            <img src={mongoDB.src} alt="css" />
-                        </div>
-                        <div className="cssDiv">
                             <span className="span Figma">Ruby</span>
                             <img src={ruby.src} alt="css" />
                         </div>
@@ -133,7 +125,7 @@ const AboutSection = () => {
 
             <div className="SkillContainerMoblie">
 
-                <div className="skillMainDivMoblie" style={{ transform: `translateX(calc(-${SkillScroll}px + 800px))` }}>
+                <div className="skillMainDivMoblie" style={{ transform: `translateX(calc(-${SkillScroll}px + 1000px))` }}>
                     <div className="topSkill">
                         <div className="cssDiv">
                             <span className="span CSS">CSS</span>
@@ -171,12 +163,6 @@ const AboutSection = () => {
                             <span className="span Figma">Fast Learner</span>
                             <img src={fire.src} alt="css" />
                         </div>
-                        <div className="cssDiv">
-                            <span className="span Figma">Node.js / Express</span>
-                            <img src={express.src} alt="css" />
-                        </div>
-
-
                     </div>
                     <div className="bottomSkill">
 
@@ -207,10 +193,6 @@ const AboutSection = () => {
                         <div className="cssDiv">
                             <span className="span Figma">Effective Communicator</span>
                             <img src={circuit.src} alt="css" />
-                        </div>
-                        <div className="cssDiv">
-                            <span className="span Figma">MongoDB</span>
-                            <img src={mongoDB.src} alt="css" />
                         </div>
                         <div className="cssDiv">
                             <span className="span Figma">Ruby</span>

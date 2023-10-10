@@ -27,7 +27,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "app/layout.jsx", "app/layout.jsx", "app/page.jsx", "app/sections/costomCursor.jsx", "app/sections/recommendationSection.jsx", "app/sections/projectSection.jsx", "app/sections/aboutSection.jsx", "app/sections/contactSection.jsx", "app/layout.jsx", "app/sections/landingPage.jsx", "app/sections/landingPage.jsx", "app/sections/aboutSection.js"  ],
   "exclude": [
     "node_modules"
   ]

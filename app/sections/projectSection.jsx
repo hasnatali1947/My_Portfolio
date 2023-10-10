@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react"
 
-import { TVShow, WeatherApp, WorriorCar, leaderboard, budgetApp, arrowLeft, arrowRight } from "../utilities/imports"
+import { TVShow, WeatherApp, housesReservation, leaderboard, warriorCars, arrowLeft, arrowRight } from "../utilities/imports"
 
 const ProjectsSection = () => {
 
@@ -46,14 +46,15 @@ const ProjectsSection = () => {
 
             <div className="project-container" ref={projectContainerRef}>
                 <div className="projects-box porject-1">
-                    <img className="ProjectImgs" src={WorriorCar.src} alt="" />
+                    <img className="ProjectImgs" src={housesReservation.src} alt="" />
                     <div className="projectDescription">
-                        <h4>Warrior Cars</h4>
+                        <h4>Houses_Reservation</h4>
                         <p>Castop project is my first near real-work project experience. I proceeded to style the content focusing on a mobile-first approach.</p>
                         <span><b>TECH STACK:</b> HTML5, CSS</span>
                         <div className="projectBtns">
-                            <a href="https://hasnatali1947.github.io/Warrior-cars/" target="_blank"><button className="btn seelive">SEE LIVE</button></a>
-                            <a href="https://github.com/hasnatali1947/Warrior-cars#-live-demo-" target="_blank"> <button className="btn seecode">SEE CODE</button></a>
+                            <a href="https://houses-reservation-frontend.vercel.app/" target="_blank"><button className="btn seelive">SEE LIVE</button></a>
+                            <a href="https://github.com/hasnatali1947/Houses_reservation-frontend" target="_blank"> <button className="btn seecode">SEE CODE</button></a>
+                            
                         </div>
                     </div>
                 </div>
@@ -97,15 +98,15 @@ const ProjectsSection = () => {
                     </div>
                 </div>
 
-                <div className="projects-box">
-                    <img className="ProjectImgs" src={budgetApp.src} alt="" />
+                <div className="projects-box porject-1">
+                    <img className="ProjectImgs" src={warriorCars.src} alt="" />
                     <div className="projectDescription">
-                        <h4>Budget Apps</h4>
-                        <p>A mobile budget management app that tracks your spending by category through a list of transactions</p>
-                        <span><b>TECH STACK:</b> HTML5, CSS, Ruby-On-Rails</span>
+                        <h4>Warrior Cars</h4>
+                        <p>Castop project is my first near real-work project experience. I proceeded to style the content focusing on a mobile-first approach.</p>
+                        <span><b>TECH STACK:</b> HTML5, CSS</span>
                         <div className="projectBtns">
-                            <a href="https://rails-capston-web-service.onrender.com" target="_blank"><button className="btn seelive">SEE LIVE</button></a>
-                            <a href="https://github.com/hasnatali1947/rails_capston#live-demo" target="_blank"><button className="btn seecode">SEE CODE</button></a>
+                            <a href="https://hasnatali1947.github.io/Warrior-cars/" target="_blank"><button className="btn seelive">SEE LIVE</button></a>
+                            <a href="https://github.com/hasnatali1947/Warrior-cars#-live-demo-" target="_blank"> <button className="btn seecode">SEE CODE</button></a>
                         </div>
                     </div>
                 </div>
