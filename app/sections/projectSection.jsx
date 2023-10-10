@@ -52,7 +52,7 @@ const ProjectsSection = () => {
                         <p>Castop project is my first near real-work project experience. I proceeded to style the content focusing on a mobile-first approach.</p>
                         <span><b>TECH STACK:</b> HTML5, CSS</span>
                         <div className="projectBtns">
-                            <a href="https://houses-reservation-frontend.vercel.app/" target="_blank"><button className="btn seelive">SEE LIVE</button></a>
+                            <a href="https://houses-reservation-frontend-xhhl.vercel.app/" target="_blank"><button className="btn seelive">SEE LIVE</button></a>
                             <a href="https://github.com/hasnatali1947/Houses_reservation-frontend" target="_blank"> <button className="btn seecode">SEE CODE</button></a>
                             
                         </div>
