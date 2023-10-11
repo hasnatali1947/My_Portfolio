@@ -216,6 +216,7 @@ body {
         transition: 0.3s;
         animation: textload 1.6s ease-in-out;
         font-family: Poppins, sans-serif;
+        cursor: pointer;
     }
 
     .connectMe:hover {
@@ -1002,6 +1003,7 @@ body {
         transition: 0.2s ease-in-out;
         color: rgba(255, 255, 255, 0.932);
         border: none;
+        cursor: pointer;
     }
 
     .box:hover {

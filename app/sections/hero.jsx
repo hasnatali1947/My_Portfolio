@@ -92,7 +92,7 @@ const LandingPage = () => {
           a website <b>Full-Stack</b> developer <br /> Specialize in
           React and Ruby-On-Rails<br /> I bring ideas to life
         </p>
-        <button onClick={() => scrollToSection("contactSection")} className="connectMe">CONNECT WITH ME</button>
+        <button onClick={() => scrollToSection("contactSectionId")} className="connectMe">CONNECT WITH ME</button>
         <button onClick={() => scrollToSection("contactSectionId")} className="TopButton"><img src={Gmail.src} alt="Gmail Logo" /></button>
 
         <div className="jsDiv">

@@ -30,7 +30,7 @@ const AboutSection = () => {
                 <div className="Aboutcontainer">
                     <div className="AboutDescription">
                         <p>
-                            A highly skilled full-stack developer with expertise in <span className="spanlanguages">Html Css, React, Next.js,</span> and <span className="spanlanguages">Ruby on Rails.</span> I have developed real-world projects such as working with supply chain management systems or car maintenance bidding systems etc. With over 3 years of working in this field, I have honed my abilities to thrive in a fast-paced environment.
+                        A highly skilled full-stack developer with expertise in <span className="spanlanguages">Html Css, React, Next.js,</span> and <span className="spanlanguages">Ruby on Rails.</span> I have developed real-world projects, including <span className="spanlanguages">Houses Reservation</span> and <span className="spanlanguages">Weather App</span>, with over 1 year of experience in the field. These projects have allowed me to gain valuable experience and thrive in a fast-paced environment.
                         </p>
                     </div>
                     <div className="MypicDiv" style={{ backgroundImage: `url(${mypic2.src})` }} >
