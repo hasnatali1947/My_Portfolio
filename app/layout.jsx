@@ -1,5 +1,4 @@
-'use client';
-import React from 'react';
+import React from "react";
 import PropTypes from 'prop-types';
 
 export const metadata = {
@@ -10,9 +9,7 @@ export const metadata = {
 function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
