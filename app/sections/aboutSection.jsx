@@ -1,11 +1,12 @@
 
 import React, { useEffect, useState } from "react";
 import { useScroll } from "framer-motion";
-
 import {
-    css, figma, freeCodeCamp, github, hackerRank, html, jest, js, firebase, next, postgreSQL, rails, react,
-    redux, ruby, mypic2, microverse, fire, express, circuit, mongoDB
+    css, figma, freeCodeCamp, github, html, jest, js, next, postgreSQL, rails, react,
+    redux, ruby, mypic2, microverse, fire, circuit
 } from "../utilities/imports"
+
+import { mousemove, mouseout } from "../utilities/magnetic";
 
 const AboutSection = () => {
 
@@ -22,28 +23,36 @@ const AboutSection = () => {
         <section className="aboutSection" id="aboutSectionId">
             <div className="aboutDiv">
 
-            <h1>SOFTWARE <br />DEVELOPER</h1>
-            <div className="Aboutcontainer">
-                <div className="AboutDescription">
-                    <span>
-                        A highly skilled full-stack developer with expertise in <span className="spanlanguages">Html Css, React, Next.js,</span> and <span className="spanlanguages">Ruby on Rails.</span> I have developed real-world projects such as working with supply chain management systems or car maintenance bidding systems etc. With over 3 years of working in this field, I have honed my abilities to thrive in a fast-paced environment.
-                    </span>
+                <h1>
+                    SOFTWARE <br />
+                    <span className="spread" >DEVELOPER</span>
+                </h1>
+                <div className="Aboutcontainer">
+                    <div className="AboutDescription">
+                        <p>
+                            A highly skilled full-stack developer with expertise in <span className="spanlanguages">Html Css, React, Next.js,</span> and <span className="spanlanguages">Ruby on Rails.</span> I have developed real-world projects such as working with supply chain management systems or car maintenance bidding systems etc. With over 3 years of working in this field, I have honed my abilities to thrive in a fast-paced environment.
+                        </p>
+                    </div>
+                    <div className="MypicDiv" style={{ backgroundImage: `url(${mypic2.src})` }} >
+                    </div>
                 </div>
-
-                <div className="MypicDiv">
-                    <img className="Mypic" src={mypic2.src} alt="Mypic" />
-                </div>
-            </div>
             </div>
 
             <div className="about-blue-background-1"></div>
             <div className="about-blue-background-2"></div>
-            <a href="https://www.microverse.org/" target="_blank"><img className="skillsOnLanding microverseSkill2" src={microverse.src} alt="microverseIcon" /></a>
+
+            <div className="MicroverseDiv2 .microverseSkill2">
+                <span className="span4 span">MICROVERSE</span>
+                <a href="https://www.microverse.org/" target="_blank" onMouseMove={mousemove} onMouseOut={mouseout}><img className="skillsOnLanding microverseSkill2" src={microverse.src} alt="microverseIcon" /></a>
+            </div>
+            <div className="jsDiv2">
+                <span className="span5 span">JS</span>
+                <a href="https://www.javascript.com/" target="_blank" onMouseMove={mousemove} onMouseOut={mouseout}><img className="skillsOnLanding JsSkill2" src={js.src} alt="microverseIcon" /></a>
+            </div>
 
             <h2>MY SKILL SET</h2>
 
             <div className="SkillContainer">
-
                 <div className="skillMainDiv">
                     <div className="topSkill">
                         <div className="cssDiv">
@@ -63,10 +72,6 @@ const AboutSection = () => {
                             <img src={github.src} alt="css" />
                         </div>
                         <div className="cssDiv">
-                            <span className="span Figma">hackerRank</span>
-                            <img src={hackerRank.src} alt="css" />
-                        </div>
-                        <div className="cssDiv">
                             <span className="span Figma">HTML</span>
                             <img src={html.src} alt="css" />
                         </div>
@@ -84,11 +89,6 @@ const AboutSection = () => {
                         </div>
                     </div>
                     <div className="bottomSkill">
-
-                        <div className="cssDiv">
-                            <span className="span Figma">Firebase</span>
-                            <img src={firebase.src} alt="css" />
-                        </div>
                         <div className="cssDiv">
                             <span className="span Figma">Next.js</span>
                             <img src={next.src} alt="css" />
@@ -144,10 +144,6 @@ const AboutSection = () => {
                             <img src={github.src} alt="css" />
                         </div>
                         <div className="cssDiv">
-                            <span className="span Figma">hackerRank</span>
-                            <img src={hackerRank.src} alt="css" />
-                        </div>
-                        <div className="cssDiv">
                             <span className="span Figma">HTML</span>
                             <img src={html.src} alt="css" />
                         </div>
@@ -165,11 +161,6 @@ const AboutSection = () => {
                         </div>
                     </div>
                     <div className="bottomSkill">
-
-                        <div className="cssDiv">
-                            <span className="span Figma">Firebase</span>
-                            <img src={firebase.src} alt="css" />
-                        </div>
                         <div className="cssDiv">
                             <span className="span Figma">Next.js</span>
                             <img src={next.src} alt="css" />

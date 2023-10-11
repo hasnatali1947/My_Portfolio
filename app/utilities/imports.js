@@ -22,7 +22,7 @@ import shayan from "../assets/images/shayan.png"
 import mercy from "../assets/images/mercy.jpeg"
 import Abbas from "../assets/images/Abbas.jpeg"
 import contactWhite from "../assets/images/contactWhite.png"
-import contactimg from "../assets/images/contactimg.jpg"
+import contactimg from "../assets/images/contactimg.png"
 import Gmail from "../assets/images/Gmail.svg";
 import MobMenu from "../assets/images/mobMenu.png"
 import blueLine from "../assets/images/blueLine.svg"

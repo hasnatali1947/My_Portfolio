@@ -48,13 +48,12 @@ const ProjectsSection = () => {
                 <div className="projects-box porject-1">
                     <img className="ProjectImgs" src={housesReservation.src} alt="" />
                     <div className="projectDescription">
-                        <h4>Houses_Reservation</h4>
+                        <h4>Houses Reservation</h4>
                         <p>Castop project is my first near real-work project experience. I proceeded to style the content focusing on a mobile-first approach.</p>
                         <span><b>TECH STACK:</b> HTML5, CSS</span>
                         <div className="projectBtns">
                             <a href="https://houses-reservation-frontend-xhhl.vercel.app/" target="_blank"><button className="btn seelive">SEE LIVE</button></a>
                             <a href="https://github.com/hasnatali1947/Houses_reservation-frontend" target="_blank"> <button className="btn seecode">SEE CODE</button></a>
-                            
                         </div>
                     </div>
                 </div>
@@ -62,7 +61,7 @@ const ProjectsSection = () => {
                 <div className="projects-box">
                     <img className="ProjectImgs" src={TVShow.src} alt="" />
                     <div className="projectDescription">
-                        <h4>TV-Show</h4>
+                        <h4>TV Show</h4>
                         <p>This website displays a list of TV shows with likes and offers detailed pages for each show, complete with comment sections.</p>
                         <span><b>TECH STACK:</b> HTML5, CSS, JavaScript</span>
                         <div className="projectBtns">

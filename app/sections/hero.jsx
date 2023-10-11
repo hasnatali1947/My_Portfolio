@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { github, Gmail, linkedin, Hasnat, blueLine, MobMenu, react, next } from "../utilities/imports"
 import "../styles/globals.css"
+import { mousemove, mouseout } from "../utilities/magnetic.js"
 
 const LandingPage = () => {
 
@@ -79,12 +80,12 @@ const LandingPage = () => {
         <img className="hasnatImage" src={Hasnat.src} alt="" />
         <h3>Hi, I&apos;m Hasnat<span role="img" aria-label="wave">🖐</span></h3>
         <h1>
-         <div className="blueLineDiv">
-          Building digital
-          <div>
-          <img className="blueLine" src={blueLine.src} alt="blueLine" />
+          <div className="blueLineDiv">
+            Building digital
+            <div>
+              <img className="blueLine" src={blueLine.src} alt="blueLine" />
+            </div>
           </div>
-          </div> 
           products, brands, and <br /> experience.
         </h1>
         <p>
@@ -93,8 +94,15 @@ const LandingPage = () => {
         </p>
         <button onClick={() => scrollToSection("contactSection")} className="connectMe">CONNECT WITH ME</button>
         <button onClick={() => scrollToSection("contactSectionId")} className="TopButton"><img src={Gmail.src} alt="Gmail Logo" /></button>
-        <a href="https://react.dev/" target="_blank"><img className="skillsOnLanding microverseSkill" src={react.src} alt="" /></a>
-        <a href="https://nextjs.org/" target="_blank"><img className="skillsOnLanding freeCodeCampSkill" src={next.src} alt="" /></a>
+
+        <div className="jsDiv">
+          <a href="https://react.dev/" target="_blank" onMouseMove={mousemove} onMouseOut={mouseout}><img className="skillsOnLanding JsSkill2" src={react.src} alt="microverseIcon" /></a>
+          <span className="span2 Figma">React</span>
+        </div>
+        <div className="MicroverseDiv">
+          <span className="span3 Figma">Next.js</span>
+          <a href="https://nextjs.org/" target="_blank" onMouseMove={mousemove} onMouseOut={mouseout}><img className="skillsOnLanding microverseSkill2" src={next.src} alt="microverseIcon" /></a>
+        </div>
       </section>
     </>
   )
