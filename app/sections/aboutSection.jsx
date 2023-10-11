@@ -41,13 +41,13 @@ const AboutSection = () => {
             <div className="about-blue-background-1"></div>
             <div className="about-blue-background-2"></div>
 
-            <div className="MicroverseDiv2 .microverseSkill2">
+            <div className="MicroverseDiv2">
                 <span className="span4 span">MICROVERSE</span>
-                <a href="https://www.microverse.org/" target="_blank" onMouseMove={mousemove} onMouseOut={mouseout}><img className="skillsOnLanding microverseSkill2" src={microverse.src} alt="microverseIcon" /></a>
+                <a href="https://www.microverse.org/" target="_blank" rel="noreferrer" onMouseMove={mousemove} onMouseOut={mouseout}><img className="skillsOnLanding microverseSkill2" src={microverse.src} alt="microverseIcon" /></a>
             </div>
             <div className="jsDiv2">
                 <span className="span5 span">JS</span>
-                <a href="https://www.javascript.com/" target="_blank" onMouseMove={mousemove} onMouseOut={mouseout}><img className="skillsOnLanding JsSkill2" src={js.src} alt="microverseIcon" /></a>
+                <a href="https://www.javascript.com/" target="_blank" rel="noreferrer" onMouseMove={mousemove} onMouseOut={mouseout}><img className="skillsOnLanding JsSkill2" src={js.src} alt="microverseIcon" /></a>
             </div>
 
             <h2>MY SKILL SET</h2>

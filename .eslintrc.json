@@ -1,6 +1,0 @@
-{
-  "extends": ["next"],
-  "rules": {
-    // Add custom rules here
-  }
-}

@@ -1,12 +1,13 @@
 'use client';
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export const metadata = {
   title: 'Hasnat Portfolio',
   description: 'Hasnat portfolio. A highly skilled fullstack developer',
 };
 
-export default function RootLayout({ children }) {
+function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
@@ -15,3 +16,9 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+RootLayout.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
+export default RootLayout;

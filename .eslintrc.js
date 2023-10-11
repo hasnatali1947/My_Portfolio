@@ -5,7 +5,6 @@ module.exports = {
     },
     "extends": [
         "eslint:recommended",
-        "stylelint-config-standard",
         "plugin:react/recommended"
     ],
     "overrides": [
@@ -22,15 +21,17 @@ module.exports = {
         }
     ],
     "parserOptions": {
-        "ecmaVersion": 12, // Use the correct ECMA version (ES2021)
+        "ecmaVersion": "latest",
         "sourceType": "module"
     },
     "plugins": [
         "react"
     ],
-    "globals": {
-        "module": "writable" // Add the module variable as a global
-    },
     "rules": {
-    }
+    },
+    settings: {
+        react: {
+          version: "detect",
+        },
+      },
 }

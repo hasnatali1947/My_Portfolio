@@ -82,9 +82,9 @@ const Contact = () => {
                 <footer>
                     <h4 className="footerH4">HAS<span className="N">N</span>AT</h4>
                     <ul>
-                        <a className="a_tag" href="https://docs.google.com/document/d/1IVhWvaHmA0EmR59zDbl8iizvOmerYMpAO1qFseMy0-o/edit?usp=sharing" target="_blank"><li>RESUME</li></a>
-                        <a className="a_tag" href="https://www.linkedin.com/in/hasnattali/" target="_blank"><li>LINKEDIN</li></a>
-                        <a className="a_tag" href="https://github.com/hasnatali1947" target="_blank"><li>GITHUB</li></a>
+                        <a className="a_tag" href="https://docs.google.com/document/d/1IVhWvaHmA0EmR59zDbl8iizvOmerYMpAO1qFseMy0-o/edit?usp=sharing" target="_blank" rel="noreferrer"><li>RESUME</li></a>
+                        <a className="a_tag" href="https://www.linkedin.com/in/hasnattali/" target="_blank" rel="noreferrer"><li>LINKEDIN</li></a>
+                        <a className="a_tag" href="https://github.com/hasnatali1947" target="_blank" rel="noreferrer"><li>GITHUB</li></a>
                     </ul>
                 </footer>
             </footer>

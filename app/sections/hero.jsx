@@ -51,8 +51,8 @@ const LandingPage = () => {
         <nav>
           <ul className="headerLeft">
             <li>
-              <a className="a_tag" href="https://github.com/hasnatali1947" target="_blank"><img src={github.src} alt="GitHub Logo" /></a>
-              <a className="a_tag" href="https://www.linkedin.com/in/hasnattali/" target="_blank"><img src={linkedin.src} alt="linkedin Logo" /></a>
+              <a className="a_tag" href="https://github.com/hasnatali1947" target="_blank" rel="noreferrer"><img src={github.src} alt="GitHub Logo" /></a>
+              <a className="a_tag" href="https://www.linkedin.com/in/hasnattali/" target="_blank" rel="noreferrer"><img src={linkedin.src} alt="linkedin Logo" /></a>
 
             </li>
           </ul>
@@ -96,12 +96,12 @@ const LandingPage = () => {
         <button onClick={() => scrollToSection("contactSectionId")} className="TopButton"><img src={Gmail.src} alt="Gmail Logo" /></button>
 
         <div className="jsDiv">
-          <a href="https://react.dev/" target="_blank" onMouseMove={mousemove} onMouseOut={mouseout}><img className="skillsOnLanding JsSkill2" src={react.src} alt="microverseIcon" /></a>
+          <a href="https://react.dev/" target="_blank" rel="noreferrer" onMouseMove={mousemove} onMouseOut={mouseout}><img className="skillsOnLanding JsSkill2" src={react.src} alt="microverseIcon" /></a>
           <span className="span2 Figma">React</span>
         </div>
         <div className="MicroverseDiv">
           <span className="span3 Figma">Next.js</span>
-          <a href="https://nextjs.org/" target="_blank" onMouseMove={mousemove} onMouseOut={mouseout}><img className="skillsOnLanding microverseSkill2" src={next.src} alt="microverseIcon" /></a>
+          <a href="https://nextjs.org/" target="_blank" rel="noreferrer" onMouseMove={mousemove} onMouseOut={mouseout}><img className="skillsOnLanding microverseSkill2" src={next.src} alt="microverseIcon" /></a>
         </div>
       </section>
     </>
