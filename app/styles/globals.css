@@ -374,10 +374,12 @@ body {
 
     .leftArrow img {
         height: 40px;
+        cursor: pointer;
     }
 
     .RightArrow img {
         height: 40px;
+        cursor: pointer;
     }
 
     .projects p {
@@ -472,6 +474,7 @@ body {
         letter-spacing: 1px;
         color: black;
         margin-top: 10px;
+        cursor: pointer;
     }
 
     .projectBtns {
@@ -2098,7 +2101,6 @@ body {
         height: 25vh;
         padding-top: 15px;
         margin-left: -8vh;
-        /* border: 2px solid; */
     }
 
     .skillMainDivMoblie {
@@ -2107,6 +2109,29 @@ body {
         margin-top: 4vh;
         width: 80%;
         transform: translateX(-50%);
+    }
+
+    .box {
+        z-index: 3;
+        transform: translate(-50%, -50%);
+        margin-left: 11vh;
+        margin-top: 4vh;
+        padding: 20px 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        font: 16px/24px Arial, sans-serif;
+        background-color: rgba(0, 0, 0, 0.944);
+        width: 150px;
+        height: 18px;
+        font-weight: 400;
+        border-radius: 30px;
+        transition: 0.2s ease-in-out;
+        color: rgba(255, 255, 255, 0.932);
+        border: none;
     }
 
 }
