@@ -37,9 +37,10 @@ import housesReservation from "../assets/projectsImg/houses-reservation.png"
 import leaderboard from "../assets/projectsImg/leaderboard.png"
 import WeatherApp from "../assets/projectsImg/weather-App.png"
 import warriorCars from "../assets/projectsImg/warriorCars.png"
+import weeShareImg from "../assets/projectsImg/WeeShareImg.png"
 
 export {
     css, figma, freeCodeCamp, github, hackerRank, html, jest, js, linkedin, microverse, firebase, next, postgreSQL, rails, react,
     redux, ruby, mypic2, cursor, shayan, mercy, Abbas, contactWhite, contactimg, Gmail, Hasnat, MobMenu, TVShow, WeatherApp, housesReservation, leaderboard, warriorCars,
-    blueLine, fire, express, circuit, mongoDB, arrowLeft, arrowRight
+    blueLine, fire, express, circuit, mongoDB, arrowLeft, arrowRight, weeShareImg
 }
